@@ -286,7 +286,6 @@ body {
 
 .education {
     padding: 100px 15px;
-    /* background: var(--second-bg-color); */
 }
 
 .education h2 {
@@ -728,6 +727,7 @@ body {
     .timeline-dot {
         left: 0;
     }
+    
 
     .projects {
         padding-bottom: 7rem;
@@ -792,11 +792,13 @@ body {
 
     .home-content p {
         max-width: 600px;
-        margin: 0 auto;
+        margin-left: 0;
     }
 
     .home-img img {
-        width: 56vh;
+        width: 56vh; 
+        margin-left: 25rem;
+        display: block; 
     }
 
     .projects h2 {
@@ -804,13 +806,62 @@ body {
     }
 
     .project-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .project-box {
+        margin: 1rem 0;
+        height: 500px;
+        margin-left: 3.5rem;
+        width: 400px;
+    }
+    .wrapper{
+        margin-left: 15rem;
     }
     .experiences h2 {
         margin-bottom: 3rem;
     }
+    .experiences-box{
+        height: 550px;
+        width: 440px;
+        margin-left: 2rem;
+    }
 
     .experiences-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .project-info h4 {
+        font-size: 1.8rem;
+        font-weight: 800;
+        line-height: 2;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-info p{
+        font-size: 1.6rem;
+        font-weight: 600;
+        max-height: 200px;
+        line-height: 1.7;
+        margin-top: 3rem;
+    
+    }
+    .project-info p h4{
+        font-size: 1.6rem;
+        margin-bottom: 0.2rem;
+    
+    }
+    .project-info p h4 p{
+        font-size: 1.6rem;
+        line-height: 1.7;
+        margin-top: 0;
+    
+    }
+    .contact{
+        margin-left: 8rem;
+    }
+    .footer{
+        width: 450px;
+    }
+    .education{
+        margin-left: 6rem;
     }
 }
